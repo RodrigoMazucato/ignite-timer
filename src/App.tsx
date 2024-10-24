@@ -1,5 +1,16 @@
-function App() {
-  return <div></div>;
-}
+import { defaultTheme } from './styles/themes/default.ts'
+import { GlobalStyle } from './styles/global.ts'
+import { ThemeProvider } from 'styled-components'
+import { Router } from './Routes'
 
-export default App;
+export function App() {
+  return (
+    <>
+      <ThemeProvider theme={defaultTheme}>
+        <Router />
+        <GlobalStyle />
+      </ThemeProvider>
+    </>
+  )
+}
+export default App

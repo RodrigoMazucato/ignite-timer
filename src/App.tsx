@@ -1,4 +1,4 @@
-import { defaultTheme } from './styles/themes/default.ts'
+import { defaultTheme } from './styles/defaultTheme.ts'
 import { GlobalStyle } from './styles/global.ts'
 import { ThemeProvider } from 'styled-components'
 import { Router } from './Routes'
